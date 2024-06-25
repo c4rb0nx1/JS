@@ -149,7 +149,7 @@ console.log(ter)
 let nter = (1>2)? 'true' : (1<2)? '2ru':'false';
 console.log(nter);
 
-2.11 - logical op
+// 2.11 - logical op
 
 //imp example
 true || alert("not printed"); // true is returned and not alert because it hit true as the first trustworthy 
