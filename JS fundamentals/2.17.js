@@ -6,4 +6,3 @@ let arrow = (naaam, age) => {
 };
 
 arrow('niran',21);
-
