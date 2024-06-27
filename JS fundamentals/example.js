@@ -58,7 +58,6 @@ let check = () => {
 }
 
 
-
 // -----function dec end .
 let empType = async () => {
     setTimeout(() => {

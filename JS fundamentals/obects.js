@@ -1,21 +1,21 @@
-// let sampleObject = {
-//     naaam : "niranchan",
-//     age : 21,
-// };
+let sampleObject = {
+    naaam : "niranchan",
+    age : 21,
+};
 
-// let freeVar = "fr";
+let freeVar = "fr";
 
-// let computerObj = {
-//     [freeVar]: "free",
-// }
-// console.log(computerObj.fr.slice(0,3));
+let computerObj = {
+    [freeVar]: "free",
+}
+console.log(computerObj.fr.slice(0,3));
 
-// freeVar = "notfr";
+freeVar = "notfr";
 
-// console.log(computerObj["notfr"]); // output's undefined because " computed props assign keys from the variable at the time of creation of objects"
+console.log(computerObj["notfr"]); // output's undefined because " computed props assign keys from the variable at the time of creation of objects"
 
 
-// console.log(sampleObject.naaam);
+console.log(sampleObject.naaam);
 
 
 const niranObj = {
@@ -48,3 +48,6 @@ console.log(newOBj, niranObj);
 newOBj.id = "INT000";
 
 console.log(newOBj, niranObj);
+
+console.log(Object.keys(niranObj));
+console.log(Object.values(niranObj));
