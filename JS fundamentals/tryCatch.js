@@ -24,6 +24,9 @@ try {
 
 
 // nested catch with error
+
+
+
 // some default props of the error object:
 // alert(err.name); 
 // alert(err.message); 

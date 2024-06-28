@@ -10,6 +10,17 @@ class Eggjamble {
     }
 };
 
+class kuttyegg extends Eggjamble{
+    constructor(obj3,obj1,obj2){
+        super(obj1,obj2);
+        this.o3 = obj3;
+    }
+
+    combidisp(){
+        console.log(this.o3);
+        super.disp();
+    }
+}
 
 const niranObj = {
     name : "Niranchan D",
@@ -27,6 +38,16 @@ let chanObj = {
     endDate : "30.04.2024",
 };
 
+let donObj = {
+    name : "john doeD",
+    age : 21,
+    id : "INT999",
+    startDate : "18.06.2024",
+    endDate : "30.04.2024",
+};
 
 let instanceEgg = new Eggjamble(niranObj,chanObj);
-instanceEgg.disp();
+let kuttyInstanceEgg = new kuttyegg(donObj,niranObj,chanObj);
+// instanceEgg.disp();
+
+kuttyInstanceEgg.combidisp();
