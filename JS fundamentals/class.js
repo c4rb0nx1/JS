@@ -11,12 +11,13 @@ class Eggjamble {
 };
 
 class kuttyegg extends Eggjamble{
-    constructor(obj3,obj1,obj2){
+    constructor(obj3,obj1,obj2){ //this constructor can be avoided and the constructor from parent can be used (1)
         super(obj1,obj2);
         this.o3 = obj3;
     }
 
-    combidisp(){
+    combidisp(){ //from (1) pass the args incase if wanna avoid constructor. (2)
+        //(3) super(obj1, obj2) --> call the super here
         console.log(this.o3);
         super.disp();
     }
