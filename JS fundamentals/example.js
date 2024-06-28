@@ -42,6 +42,17 @@ let aswinObj = {
 };
 // object creation - end
 
+
+//using map instead of objects
+let user1 = { 
+    name:"niranchan",
+    age:21,"id":"INT112",
+    role:"DevOps intern",
+};
+
+let peopleMap = new Map();
+map.set(user1,{primaryDevicde:"MBP m1 pro",pheripheral1:"Benq 27Inch monitor", pheripheral2:"logitech mouse"});
+
 //obj array to maintain all the employee details.
 let empDetObjArr = [niranObj, abhiObj,aswinObj];
 
