@@ -14,16 +14,20 @@ try {
     }
   } catch (err) {
     console.log(err);
+    //function asking to resend the data; 
+  }finally{
+    // process futher and complete the exec.
+    console.log("completed");
   }
 
 
 
 
 
-    // some default props of the error object:
-    // alert(err.name); 
-    // alert(err.message); 
-    // alert(err.stack); 
-    // alert(err); 
-    // // how is it diff from a regular object.
-    // console.log(Object.values(err)); // returns [] since this is not enumerable
+// some default props of the error object:
+// alert(err.name); 
+// alert(err.message); 
+// alert(err.stack); 
+// alert(err); 
+// // how is it diff from a regular object.
+// console.log(Object.values(err)); // returns [] since this is not enumerable
