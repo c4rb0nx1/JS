@@ -9,12 +9,12 @@ let promise = new Promise((resolve, reject) => {
         };
         if(incompObj.name == 'niran'){  // change condition to return 1 or 0 to trigger resolve() / reject()
             console.log("No error");
-            resolve("success");
+            resolve("resolved");
         }else{
             throw newerr; // throw's a custom error to catch block
         }
     }catch (err) {
-        reject("reject triggered"); // error is catched and reject is triggered.
+        reject("rejected"); // error is catched and reject is triggered.
     }finally{
         console.log("completed");
     }
@@ -22,10 +22,13 @@ let promise = new Promise((resolve, reject) => {
 
   promise
     .then((result)=> { // if resolved();
-        console.log("then here");
+        console.log(".then block");
         console.log(result);
     })
     .catch((result)=> { //if rejected(); 
+        console.log(".catch block");
         console.log(result);
-        console.log("catch triggered");
+    }).finally((result)=>{ // just same as the finally in try...catch...finally.
+        console.log("regardless of the reject/resolve this block is 'finally' triggered.")
+
     });
