@@ -28,7 +28,6 @@ let promise = new Promise((resolve, reject) => {
     .catch((result)=> { //if rejected(); 
         console.log(".catch block");
         console.log(result);
-    }).finally((result)=>{ // just same as the finally in try...catch...finally.
+    }).finally(()=>{ // just same as the finally in try...catch...finally.
         console.log("regardless of the reject/resolve this block is 'finally' triggered.")
-
     });
