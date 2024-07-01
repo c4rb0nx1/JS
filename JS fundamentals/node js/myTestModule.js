@@ -1,10 +1,8 @@
-// let addd = (a,b)=> {
-//     return(a+b);
-// }
+let subb = (a,b)=> {
+    return(a-b);
+}
 
-
-
-function ad(a,b){
+exports.ad = function ad(a,b){
     return(a+b);
 }
-module.exports.ad = ad;
+exports.subb = subb;//  -> generally used.

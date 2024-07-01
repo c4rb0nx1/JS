@@ -9,3 +9,4 @@ http.createServer((req,res)=>{
     res.write("hello form node") // use when multiple needs to be sent and 
     res.end() // use directly end like res.end("hello from node") for a single msg
 }).listen(8080)
+
