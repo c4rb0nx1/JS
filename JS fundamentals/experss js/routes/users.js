@@ -9,12 +9,19 @@ router.route("/:id")
     res.send("recieved a get req for id"+req.params.id)
 })
     .post((req,res)=>{
-    console.log('post trig' + req.params.id)
+    console.log('post trig ' + req.params.id)
     res.send("Recieved a post req for "+req.params.id)
 })
     .delete((req,res)=>{
     console.log("delete trig")
     res.send(`User ${req.params.id} is deleted`)
+})
+
+
+router.param('id',(req,res,next,id)=>{
+    console.log("middleware param logging "+id)
+    req.params.id++ // here the middleware modified the value from the req body and passed it to the next middleware / route
+    next()
 })
 
 //the above is the below equivalent code :)
